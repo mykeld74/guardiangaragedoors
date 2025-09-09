@@ -19,7 +19,7 @@
 	};
 
 	let { children, data } = $props();
-	console.log(data);
+
 	let title = $derived(data.pathname.split('/').pop());
 	onMount(() => {
 		innerWidth = window.innerWidth;

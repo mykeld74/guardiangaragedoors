@@ -1,16 +1,12 @@
 <script>
 	import { ReplacementDoorCard } from '$lib/components';
 	import ReplacementDoors from '$lib/data/replacementDoors.json';
-	console.log(ReplacementDoors);
+
 	let RaisedPanel = ReplacementDoors.categories.find((category) => category.id === 'raised-panel');
 	let CarriageHouse = ReplacementDoors.categories.find(
 		(category) => category.id === 'carriage-house'
 	);
 	let FlushPanel = ReplacementDoors.categories.find((category) => category.id === 'flush-panel');
-
-	$inspect('RaisedPanel', RaisedPanel?.doors);
-	$inspect('CarriageHouse', CarriageHouse?.doors);
-	$inspect('FlushPanel', FlushPanel?.doors);
 </script>
 
 <svelte:head>

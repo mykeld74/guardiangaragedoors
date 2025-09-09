@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { ContactForm } from '$lib/components';
-	let selectedService = $state('');
+	import { fly } from 'svelte/transition';
 	const yearsOfExperience = new Date().getFullYear() - 2006;
 
 	let isContactModalOpen = $state(false);
@@ -170,6 +170,7 @@
 			onclick={(e) => e.stopPropagation()}
 			onkeydown={(e) => e.stopPropagation()}
 			role="none"
+			transition:fly={{ y: 400, duration: 500 }}
 		>
 			<div class="contactModalHeader">
 				<h3 id="contact-modal-title">Contact Us</h3>
@@ -324,5 +325,20 @@
 
 	.contactModalContent {
 		padding: 1rem 1rem 2rem 1rem;
+	}
+	.contactBtn {
+		background-color: var(--primaryColor);
+		color: white;
+		border: none;
+		padding: 1rem 2rem;
+		font-size: 2.1rem;
+		font-weight: bold;
+		border-radius: 8px;
+		margin-top: 1rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		&:hover {
+			background-color: var(--accentColor);
+		}
 	}
 </style>
