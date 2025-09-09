@@ -1,0 +1,299 @@
+{
+	"categories": [
+		{
+			"id": "raised-panel",
+			"name": "Raised Panel",
+			"description": "Classic raised panel design with traditional appeal",
+			"doors": [
+				{
+					"id": "3610",
+					"name": "3610",
+					"category": "Raised Panel",
+					"description": "Traditional raised panel garage door with clean lines and classic appeal",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" }
+					],
+					"windowOptions": [
+						{ "optionName": "Sherwood", "img": "Sherwood" },
+						{ "optionName": "Williamsburg", "img": "Williamsburg" },
+						{ "optionName": "Cascade", "img": "Cascade" },
+						{ "optionName": "Cathedral", "img": "Cathedral" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Waterton", "img": "Waterton" },
+						{ "optionName": "Prairie", "img": "Prairie" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" },
+						{ "optionName": "Pattern", "img": "pattern" }
+					],
+					"image": "3610-1"
+				},
+				{
+					"id": "3690",
+					"name": "3690",
+					"category": "Raised Panel",
+					"description": "Premium raised panel garage door with enhanced features",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" }
+					],
+					"windowOptions": [
+						{ "optionName": "Sherwood", "img": "Sherwood" },
+						{ "optionName": "Williamsburg", "img": "Williamsburg" },
+						{ "optionName": "Cascade", "img": "Cascade" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Prairie", "img": "Prairie" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" },
+						{ "optionName": "Pattern", "img": "pattern" }
+					],
+					"image": "3690-1"
+				}
+			]
+		},
+		{
+			"id": "carriage-house",
+			"name": "Carriage House",
+			"description": "Rustic carriage house style doors with authentic charm",
+			"doors": [
+				{
+					"id": "3620",
+					"name": "3620",
+					"category": "Carriage House",
+					"description": "Classic carriage house garage door with traditional hardware",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" },
+						{ "colorName": "Walnut", "img": "walnut" },
+						{ "colorName": "Driftwood", "img": "driftwood" },
+						{ "colorName": "Oak", "img": "oak" }
+					],
+					"windowOptions": [
+						{ "optionName": "Prairie", "img": "Prairie" },
+						{ "optionName": "Somerton", "img": "Somerton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockton Arch", "img": "Stockton_Arch" },
+						{ "optionName": "Wyndbridge", "img": "Wyndbridge" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" },
+						{ "optionName": "Pattern", "img": "pattern" }
+					],
+					"image": "3620"
+				},
+				{
+					"id": "3630",
+					"name": "3630",
+					"category": "Carriage House",
+					"description": "Enhanced carriage house door with premium features",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" },
+						{ "colorName": "Walnut", "img": "walnut" },
+						{ "colorName": "Driftwood", "img": "driftwood" },
+						{ "colorName": "Oak", "img": "oak" }
+					],
+					"windowOptions": [
+						{ "optionName": "Prairie", "img": "Prairie" },
+						{ "optionName": "Somerton", "img": "Somerton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockton Arch", "img": "Stockton_Arch" },
+						{ "optionName": "Wyndbridge", "img": "Wyndbridge" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" },
+						{ "optionName": "Pattern", "img": "pattern" }
+					],
+					"image": "3630"
+				},
+				{
+					"id": "3640",
+					"name": "3640",
+					"category": "Carriage House",
+					"description": "Deluxe carriage house door with superior construction",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" },
+						{ "colorName": "Walnut", "img": "walnut" },
+						{ "colorName": "Driftwood", "img": "driftwood" },
+						{ "colorName": "Oak", "img": "oak" }
+					],
+					"windowOptions": [
+						{ "optionName": "Prairie", "img": "Prairie" },
+						{ "optionName": "Somerton", "img": "Somerton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockton Arch", "img": "Stockton_Arch" },
+						{ "optionName": "Wyndbridge", "img": "Wyndbridge" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" }
+					],
+					"image": "3640"
+				},
+				{
+					"id": "3680",
+					"name": "3680",
+					"category": "Carriage House",
+					"description": "Ultimate carriage house door with luxury features",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" },
+						{ "colorName": "Walnut", "img": "walnut" },
+						{ "colorName": "Driftwood", "img": "driftwood" },
+						{ "colorName": "Oak", "img": "oak" }
+					],
+					"windowOptions": [
+						{ "optionName": "Prairie", "img": "Prairie" },
+						{ "optionName": "Somerton", "img": "Somerton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockton Arch", "img": "Stockton_Arch" },
+						{ "optionName": "Wyndbridge", "img": "Wyndbridge" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" },
+						{ "optionName": "Pattern", "img": "pattern" }
+					],
+					"image": "3680"
+				},
+				{
+					"id": "carriage-creek",
+					"name": "Carriage Creek",
+					"category": "Carriage House",
+					"description": "Rustic carriage creek garage door with authentic wood-grain appearance",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Gray", "img": "gray" }
+					],
+					"windowOptions": [
+						{ "optionName": "Somerton", "img": "Somerton" },
+						{ "optionName": "Stockbridge", "img": "Stockbridge" },
+						{ "optionName": "Stockton", "img": "Stockton" },
+						{ "optionName": "Stockton Arch", "img": "Stockton_Arch" },
+						{ "optionName": "Wyndbridge", "img": "Wyndbridge" }
+					],
+					"glassOptions": [
+						{ "optionName": "Clear", "img": "clear" },
+						{ "optionName": "Satin", "img": "satin" },
+						{ "optionName": "Bronze", "img": "bronze" },
+						{ "optionName": "Gray", "img": "gray-1" },
+						{ "optionName": "Gray Lite", "img": "graylite" },
+						{ "optionName": "Pattern", "img": "pattern" }
+					],
+					"image": "CarriageCreek"
+				},
+				{
+					"id": "woodland-creek",
+					"name": "Woodland Creek",
+					"category": "Woodland Creek",
+					"description": "Natural woodland creek garage door with organic wood appearance",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [{ "colorName": "Oak", "img": "oak" }],
+					"windowOptions": [],
+					"glassOptions": [],
+					"image": "WoodlandCreek"
+				}
+			]
+		},
+
+		{
+			"id": "flush-panel",
+			"name": "Flush Panel",
+			"description": "Modern flush panel doors with contemporary styling",
+			"doors": [
+				{
+					"id": "3650",
+					"name": "3650",
+					"category": "Flush Panel",
+					"description": "Modern flush panel garage door with sleek contemporary design",
+					"features": ["R-Value: 10.25", "Interior Material: Steel"],
+					"colors": [
+						{ "colorName": "White", "img": "white" },
+						{ "colorName": "Almond", "img": "almond" },
+						{ "colorName": "Desert Tan", "img": "desertTan" },
+						{ "colorName": "Sandstone", "img": "sandstone" },
+						{ "colorName": "Brown", "img": "brown" },
+						{ "colorName": "Gray", "img": "gray" },
+						{ "colorName": "Black", "img": "black" }
+					],
+					"windowOptions": [],
+					"glassOptions": [],
+					"image": "3650"
+				}
+			]
+		}
+	]
+}

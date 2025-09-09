@@ -1,0 +1,146 @@
+/* CSS Custom Properties */
+:root {
+	--primaryColor: oklch(0.45 0.15 240);
+	--contrastColor: oklch(0.95 0.02 240);
+	--backgroundColor: oklch(1 0 0);
+	--textColor: oklch(0.2 0.02 240);
+	--accentColor: oklch(0.5133 0.2577 29.23);
+	--headerBg: oklch(0 0 0);
+	--footerBg: oklch(0.3 0.02 240);
+	--linkColor: var(--textColor);
+}
+
+/* Reset and base styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Oswald', sans-serif;
+	margin-block: 1rem 1.67rem;
+}
+
+h1 {
+	font-size: clamp(40px, 4vw, 60px);
+}
+h2 {
+	font-size: clamp(30px, 3vw, 40px);
+}
+a {
+	color: var(--primaryColor);
+	text-decoration: none;
+	transition: color 0.3s ease;
+	&:hover {
+		color: var(--accentColor);
+	}
+}
+
+body {
+	font-family: 'Maven Pro', sans-serif;
+	color: var(--textColor);
+	background-color: var(--backgroundColor);
+	font-size: 30px;
+}
+main {
+	min-height: calc(100vh - 200px);
+	padding-block: 2rem;
+	&.home {
+		padding-block: 0 2rem;
+	}
+}
+
+p,
+li {
+	font-size: clamp(20px, 2vw, 30px);
+}
+ul {
+	margin-left: 5rem;
+	@media (max-width: 768px) {
+		margin-left: 2rem;
+	}
+}
+li {
+	font-weight: 400;
+}
+
+.container {
+	width: calc(100% - 1rem);
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header */
+.header {
+	background: var(--headerBg);
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 2rem;
+}
+
+.brandLink {
+	text-decoration: none;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.logo {
+	width: clamp(50px, 5vw, 100px);
+}
+
+.brandText {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 0 1rem;
+	text-transform: uppercase;
+}
+
+.brandText h1 {
+	color: var(--accentColor);
+	margin: 0;
+	font-size: clamp(26px, 6vw, 38px);
+	letter-spacing: 0.1em;
+	line-height: 1.1;
+}
+
+.brandText h2 {
+	color: var(--contrastColor);
+	margin: 0;
+	font-size: clamp(19px, 4.35vw, 27px);
+	font-weight: 400;
+	letter-spacing: 0.095em;
+	line-height: 1;
+}
+
+.fish {
+	width: clamp(40px, 5vw, 100px);
+}
+
+/* Footer */
+.footer {
+	background: var(--footerBg);
+	color: var(--contrastColor);
+	text-align: center;
+	padding: 2rem;
+}
+
+.footer p {
+	margin: 0;
+	font-size: 0.9rem;
+}

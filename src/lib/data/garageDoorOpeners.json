@@ -1,0 +1,38 @@
+[
+	{
+		"id": "8500w",
+		"title": "8500W Side Mount MyQ Wifi equipped W/ Battery backup",
+		"description": "Comes with: Digital display wall control, two transmitters and 1 keyless entry",
+		"image": "8500"
+	},
+	{
+		"id": "85503",
+		"title": "85503 Secure View™ DC Battery Backup Belt Drive Wi-Fi® Garage Door Opener",
+		"description": "Integrated video camera enables you to see what is happening in your garage through a live feed or recorded event. Video camera begins recording when motion is detected. Battery Backup allows you to open/close your door even when the power is out. Built-in Wi-Fi® allows for smartphone control with the myQ® App.",
+		"image": "85503"
+	},
+	{
+		"id": "8550",
+		"title": "8550 Belt Drive MyQ Wifi equipped W/battery backup",
+		"description": "Comes with: Digital display wall control, two transmitters and 1 keyless entry",
+		"image": "8550"
+	},
+	{
+		"id": "8355",
+		"title": "8355 Belt Drive MyQ Wifi equipped",
+		"description": "Comes with two transmitters and 1 keyless entry",
+		"image": "8355"
+	},
+	{
+		"id": "8365",
+		"title": "8365 Chain Drive MyQ Wifi equipped",
+		"description": "Comes with two transmitters and 1 keyless entry",
+		"image": "8365"
+	},
+	{
+		"id": "8164w",
+		"title": "8164W Chain Drive MyQ Wifi equipped",
+		"description": "Comes with one transmitter",
+		"image": "8164"
+	}
+]
