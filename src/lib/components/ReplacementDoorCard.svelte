@@ -26,7 +26,7 @@
 
 <DoorModal {door} isOpen={isModalOpen} onClose={closeModal} />
 
-<style>
+<style lang="postcss">
 	.replacementDoorCard {
 		display: flex;
 		flex-direction: column;
