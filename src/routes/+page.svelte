@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ContactForm } from '$lib/components';
+	import { ContactForm, Reviews } from '$lib/components';
 	import { fly } from 'svelte/transition';
 	const yearsOfExperience = new Date().getFullYear() - 2006;
 
@@ -142,14 +142,25 @@
 	</div>
 </section>
 
+<!-- Reviews Section -->
+<section class="reviews" id="reviews">
+	<h3 class="section-title center">See What Our Customers Are Saying</h3>
+	<Reviews
+		googlePlaceId={import.meta.env.VITE_GOOGLE_PLACE_ID}
+		googleApiKey={import.meta.env.VITE_GOOGLE_PLACES_API_KEY}
+		maxReviews={9}
+		showPlatformIcons={false}
+	/>
+</section>
+
 <!-- Contact Section -->
 <section class="contact" id="contact">
 	<div class="container">
 		<h3 class="section-title">Contact Us</h3>
 		<div class="contact-content">
 			<p>Ready to get started? Contact us today for your free estimate!</p>
-			<div class="contact-buttons">
-				<button class="contactBtn" onclick={openContactModal}>Contact Us</button>
+			<div class="contactButtons">
+				<a href="/contact-us" class="contactBtn">Contact Us</a>
 			</div>
 		</div>
 	</div>
@@ -340,5 +351,10 @@
 		&:hover {
 			background-color: var(--accentColor);
 		}
+	}
+	.contactButtons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

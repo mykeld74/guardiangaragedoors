@@ -1,12 +1,14 @@
 <script>
+	import { fade } from 'svelte/transition';
+	import IMask from 'imask';
 	let formData = $state({
 		name: '',
-		subject: '',
 		phone: '',
 		email: '',
 		serviceType: '',
 		message: ''
 	});
+	const maskConfig = { mask: '(000) 000-0000' };
 
 	let isSubmitting = $state(false);
 	let submitMessage = $state('');
@@ -32,7 +34,6 @@
 				submitMessage = 'Thank you! Your message has been sent successfully.';
 				formData = {
 					name: '',
-					subject: '',
 					phone: '',
 					email: '',
 					serviceType: '',
@@ -45,6 +46,10 @@
 			submitMessage = 'Sorry, there was an error sending your message. Please try again.';
 		} finally {
 			isSubmitting = false;
+			// Clear submit message after 5 seconds
+			setTimeout(() => {
+				submitMessage = '';
+			}, 5000);
 		}
 	}
 </script>
@@ -57,16 +62,7 @@
 
 		<div class="formGroup">
 			<input
-				type="text"
-				id="subject"
-				bind:value={formData.subject}
-				placeholder="Subject"
-				required
-			/>
-		</div>
-
-		<div class="formGroup">
-			<input
+				use:IMask={maskConfig}
 				type="tel"
 				id="phone"
 				bind:value={formData.phone}
@@ -104,7 +100,7 @@
 		</button>
 
 		{#if submitMessage}
-			<div class="submitMessage" class:error={submitMessage.includes('error')}>
+			<div class="submitMessage" class:error={submitMessage.includes('error')} transition:fade>
 				{submitMessage}
 			</div>
 		{/if}
@@ -190,6 +186,7 @@
 		padding: 1rem;
 		border-radius: 4px;
 		text-align: center;
+		font-size: 1.3rem;
 		font-weight: 500;
 		background-color: var(--successBackground, #d4edda);
 		color: var(--successColor, #155724);

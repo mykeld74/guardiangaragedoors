@@ -68,6 +68,9 @@ ul {
 li {
 	font-weight: 400;
 }
+.center {
+	text-align: center;
+}
 
 .container {
 	width: calc(100% - 1rem);
