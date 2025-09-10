@@ -147,3 +147,33 @@ li {
 	margin: 0;
 	font-size: 0.9rem;
 }
+
+/* Reveal animation styles */
+.revealTransition {
+	transition:
+		opacity 0.3s ease-out,
+		transform 0.3s ease-out;
+}
+
+.revealHidden {
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+.revealVisible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* Ensure hover transitions work on revealed elements */
+.revealVisible.replacementDoorCard {
+	transition:
+		opacity 0.3s ease-out,
+		transform 0.3s ease-out,
+		box-shadow 300ms ease-in-out;
+}
+
+.revealVisible.replacementDoorCard:hover {
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0);
+	transform: translateY(0) translate(2px, 2px);
+}

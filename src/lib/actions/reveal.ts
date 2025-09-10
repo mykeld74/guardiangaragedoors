@@ -22,9 +22,10 @@ export function revealOnScroll(node: HTMLElement, options: RevealOptions = {}) {
 
 	// Set initial state
 	elements.forEach((element) => {
-		element.style.opacity = '0';
-		element.style.transform = `translateY(${y}px)`;
-		element.style.transition = `opacity ${duration}s ease-out, transform ${duration}s ease-out`;
+		// Add reveal transition class with custom duration
+		element.classList.add('revealTransition', 'revealHidden');
+		element.style.setProperty('--reveal-duration', `${duration}s`);
+		element.style.setProperty('--reveal-y', `${y}px`);
 	});
 
 	// Check if elements are already in viewport on load
@@ -36,8 +37,8 @@ export function revealOnScroll(node: HTMLElement, options: RevealOptions = {}) {
 			if (isInViewport && !animatedElements.has(element)) {
 				setTimeout(
 					() => {
-						element.style.opacity = '1';
-						element.style.transform = 'translateY(0)';
+						element.classList.remove('revealHidden');
+						element.classList.add('revealVisible');
 						animatedElements.add(element);
 					},
 					index * stagger * 1000
@@ -61,8 +62,8 @@ export function revealOnScroll(node: HTMLElement, options: RevealOptions = {}) {
 					// Animate in with stagger
 					setTimeout(
 						() => {
-							element.style.opacity = '1';
-							element.style.transform = 'translateY(0)';
+							element.classList.remove('revealHidden');
+							element.classList.add('revealVisible');
 							animatedElements.add(element);
 						},
 						index * stagger * 1000
@@ -76,8 +77,8 @@ export function revealOnScroll(node: HTMLElement, options: RevealOptions = {}) {
 					const reverseIndex = elements.length - 1 - index;
 					setTimeout(
 						() => {
-							element.style.opacity = '0';
-							element.style.transform = `translateY(${y}px)`;
+							element.classList.remove('revealVisible');
+							element.classList.add('revealHidden');
 							animatedElements.delete(element);
 						},
 						reverseIndex * stagger * 1000

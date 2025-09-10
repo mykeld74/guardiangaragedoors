@@ -37,13 +37,13 @@
 		box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4);
 		border: none;
 		cursor: pointer;
-		transition: all 0.3s ease-in-out;
-		will-change: transform, box-shadow;
-	}
-
-	.replacementDoorCard:hover {
-		box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0);
-		transform: translate(2px, 2px);
+		transition:
+			box-shadow 300ms ease-in-out,
+			transform 300ms ease-in-out;
+		&:hover {
+			box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0);
+			transform: translate(2px, 2px);
+		}
 	}
 
 	.replacementDoorCardContent {
