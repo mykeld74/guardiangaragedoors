@@ -1,12 +1,15 @@
 <script>
 	import { ReplacementDoorCard } from '$lib/components';
 	import ReplacementDoors from '$lib/data/replacementDoors.json';
+	import { revealOnScroll } from '$lib';
 
 	let RaisedPanel = ReplacementDoors.categories.find((category) => category.id === 'raised-panel');
 	let CarriageHouse = ReplacementDoors.categories.find(
 		(category) => category.id === 'carriage-house'
 	);
 	let FlushPanel = ReplacementDoors.categories.find((category) => category.id === 'flush-panel');
+
+	const reveal = revealOnScroll;
 </script>
 
 <svelte:head>
@@ -29,7 +32,7 @@
 </section>
 <section>
 	<div class="container">
-		<div class="doorContainer raisedPanel">
+		<div class="doorContainer raisedPanel" use:reveal={{ targets: '.replacementDoorCard' }}>
 			<h2>Raised Panel</h2>
 			<div class="doorCardContainer">
 				{#each RaisedPanel?.doors ?? [] as door}
@@ -38,7 +41,7 @@
 			</div>
 		</div>
 
-		<div class="doorContainer carriageHouse">
+		<div class="doorContainer carriageHouse" use:reveal={{ targets: '.replacementDoorCard' }}>
 			<h2>Carriage House</h2>
 			<div class="doorCardContainer">
 				{#each CarriageHouse?.doors ?? [] as door}
@@ -47,7 +50,7 @@
 			</div>
 		</div>
 
-		<div class="doorContainer flushPanel">
+		<div class="doorContainer flushPanel" use:reveal={{ targets: '.replacementDoorCard' }}>
 			<h2>Flush Panel</h2>
 			<div class="doorCardContainer">
 				{#each FlushPanel?.doors ?? [] as door}

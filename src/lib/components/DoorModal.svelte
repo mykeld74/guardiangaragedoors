@@ -164,7 +164,7 @@
 		color: white;
 		padding: 0.25rem 0.75rem;
 		border-radius: 20px;
-		font-size: 0.875rem;
+		font-size: 1rem;
 		font-weight: 500;
 	}
 

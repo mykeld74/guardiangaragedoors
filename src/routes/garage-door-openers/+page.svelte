@@ -1,6 +1,8 @@
 <script>
 	import { OpenerCard } from '$lib/components';
 	import garageDoorOpeners from '$lib/data/garageDoorOpeners.json';
+	import { revealOnScroll } from '$lib';
+	const reveal = revealOnScroll;
 </script>
 
 <svelte:head>
@@ -33,7 +35,10 @@
 			For more information about <a href="https://www.myq.com/" target="_blank">MyQ click here</a>.
 		</p>
 
-		<div class="openersContainer">
+		<div
+			class="openersContainer"
+			use:reveal={{ targets: '.openerCard', y: 75, duration: 0.3, stagger: 0.08 }}
+		>
 			<h2>Featured Openers:</h2>
 			{#each garageDoorOpeners as opener}
 				<OpenerCard {opener} />
