@@ -8,6 +8,7 @@
 	--headerBg: oklch(0 0 0);
 	--footerBg: oklch(0.3 0.02 240);
 	--linkColor: var(--textColor);
+	--hoverBg: oklch(0.5428 0.1317 250.09);
 }
 
 /* Reset and base styles */
