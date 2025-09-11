@@ -191,7 +191,7 @@
 
 <!-- Contact Section -->
 <section class="contact" id="contact">
-	<div class="container">
+	<div class="container center">
 		<h3 class="section-title">Contact Us</h3>
 		<div class="contact-content">
 			<p>Ready to get started? Contact us today for your free estimate!</p>
