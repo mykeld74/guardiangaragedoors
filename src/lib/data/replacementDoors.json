@@ -254,17 +254,6 @@
 						{ "optionName": "Pattern", "img": "pattern" }
 					],
 					"image": "CarriageCreek"
-				},
-				{
-					"id": "woodland-creek",
-					"name": "Woodland Creek",
-					"category": "Woodland Creek",
-					"description": "Natural woodland creek garage door with organic wood appearance",
-					"features": ["R-Value: 10.25", "Interior Material: Steel"],
-					"colors": [{ "colorName": "Oak", "img": "oak" }],
-					"windowOptions": [],
-					"glassOptions": [],
-					"image": "WoodlandCreek"
 				}
 			]
 		},
