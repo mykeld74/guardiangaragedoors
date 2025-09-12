@@ -18,7 +18,7 @@ export const POST = async ({ request }) => {
 	try {
 		await transporter.sendMail({
 			from: `"Guardian Repairs Web Inquiry" <${env.GOOGLE_EMAIL}>`,
-			to: 'mike@bigbearded.dev',
+			to: 'guardianrepairs@gmail.com, mike@bigbearded.dev',
 			subject: `New Form Submission from ${name}`,
 			html: `
 			<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4; font-size: 18px;">
